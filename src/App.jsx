@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Iframe Component with Tailwind styling
 const IframeComponent = ({ title, src }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -38,7 +37,6 @@ function App() {
 
   return (
     <div className="font-sans">
-      {/* Navbar */}
       <nav className="bg-gray-900 text-white px-4 py-3 lg:px-44">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-xl font-bold">Smart Waste Management</a>
@@ -53,16 +51,16 @@ function App() {
           </div>
         </div>
 
-        {/* Sidebar Menu for Mobile */}
+        
         {navOpen && (
           <>
-            {/* Blurred Background */}
+          
             <div
               className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity duration-300"
               onClick={() => setNavOpen(false)}
             ></div>
 
-            {/* Sliding Sidebar */}
+            
             <div className="fixed top-0 left-0 w-3/4 h-full bg-gray-900 text-white p-6 transition-transform duration-300 transform translate-x-0">
               <button onClick={() => setNavOpen(false)} className="text-right text-2xl font-semibold">&times;</button>
               <div className="mt-8 space-y-4">
@@ -76,19 +74,16 @@ function App() {
         )}
       </nav>
 
-      {/* Alert Message */}
       {showAlert && (
         <div className="bg-blue-100 text-blue-800 text-center p-2">
           Welcome to the Smart Waste Management System! Here, you can monitor real-time waste levels.
         </div>
       )}
 
-      {/* Main Content */}
       <div className="container mx-auto my-8 px-10 lg:px-44">
         <h1 className="text-3xl text-center font-bold mb-4">Smart Waste Management System</h1>
         <p className="text-center text-gray-700">Real-time monitoring of waste bins to optimize waste collection and management.</p>
 
-        {/* Bins Status Section */}
         <section id="bins" className="mt-8">
           <div className="flex flex-wrap -mx-4">
             <IframeComponent
@@ -110,13 +105,13 @@ function App() {
           </div>
         </section>
 
-        {/* About Section */}
+       
         <section id="about" className="mt-8">
           <h2 className="text-2xl font-bold">About the Project</h2>
           <p className="text-gray-700 mt-2">This Smart Waste Management System provides real-time tracking and monitoring of waste bin levels to help optimize waste collection and reduce environmental impact. By monitoring waste levels in various bins, the system ensures timely collection and contributes to a cleaner, healthier environment.</p>
         </section>
 
-        {/* Contact Section */}
+      
         <section id="contact" className="mt-8">
           <h2 className="text-2xl font-bold">Contact Us</h2>
           <p className="text-gray-700 mt-2">If you have any questions or would like more information about the Smart Waste Management System, feel free to reach out to us.</p>
@@ -127,7 +122,7 @@ function App() {
         </section>
       </div>
 
-      {/* Footer Section */}
+      
       <footer className="bg-gray-900 text-white text-center p-4 mt-8">
         <p className="text-sm">&copy; 2024 Smart Waste Management System, Project Group-5</p>
         <p className="text-sm">Made by Kanwalpreet Singh, Kshitiz Vardhan, Harsahej Kaur, M Anup Simha, Krish Bhaukhandi</p>
