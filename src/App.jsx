@@ -125,7 +125,7 @@ function App() {
       
       <footer className="bg-gray-900 text-white text-center p-4 mt-8">
         <p className="text-sm">&copy; 2024 Smart Waste Management System, Project Group-5</p>
-        <p className="text-sm">Made by Kanwalpreet Singh, Kshitiz Vardhan, Harsahej Kaur, M Anup Simha, Krish Bhaukhandi</p>
+        <p className="text-sm">Made by Ruhaan Sharma, Mohnish Kaplish, Manan Syal, Nikhil Dalal</p>
       </footer>
     </div>
   );
